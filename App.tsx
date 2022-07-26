@@ -1,8 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-import { addFeature } from "./store/bugs";
 import store from "./store/configureStore";
+import { addFeature } from "./store/feature";
 
 export default function App() {
   store.dispatch(addFeature({ name: "Xbox" }));
