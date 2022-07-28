@@ -5,20 +5,10 @@ import store from "./store/configureStore";
 import { addFeature, deleteFeature, getSearchFeature } from "./store/features";
 import { addFeatureToMember, addMember } from "./store/members";
 
-store.dispatch(addFeature({ name: "Xbox" }));
-//store.dispatch(deleteFeature({ name: "Xbox" }));
-
-store.dispatch(addMember({ memberName: "Eric" }));
-
-//console.log("[" + 32 + "m" + "store : " + "[0m", store.getState());
-
-//console.log("[" + 32 + "m" + "state : " + "[0m", getSearchFeature(store));
-store.dispatch(addFeatureToMember({ feature: "Coat" }));
-
-// console.log(
-//   "[" + 32 + "m" + "store : " + "[0m",
-//   store.getState().entities.members
-// );
+store.dispatch((dispatch, getState) => {
+  dispatch({ type: "addFeature", payload: { name: "Xnox" } });
+  console.log("[" + 32 + "m" + "getState : " + "[0m", getState);
+});
 
 export default function App() {
   return (
