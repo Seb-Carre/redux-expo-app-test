@@ -10,15 +10,15 @@ store.dispatch(addFeature({ name: "Xbox" }));
 
 store.dispatch(addMember({ memberName: "Eric" }));
 
-console.log("[" + 32 + "m" + "store : " + "[0m", store.getState());
+//console.log("[" + 32 + "m" + "store : " + "[0m", store.getState());
 
 //console.log("[" + 32 + "m" + "state : " + "[0m", getSearchFeature(store));
 store.dispatch(addFeatureToMember({ feature: "Coat" }));
 
-console.log(
-  "[" + 32 + "m" + "store : " + "[0m",
-  store.getState().entities.members
-);
+// console.log(
+//   "[" + 32 + "m" + "store : " + "[0m",
+//   store.getState().entities.members
+// );
 
 export default function App() {
   return (

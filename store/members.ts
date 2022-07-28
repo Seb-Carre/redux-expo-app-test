@@ -24,7 +24,7 @@ const slice = createSlice({
       const indexMember = members.indexOf(
         (member) => member === action.payload.memberName
       ); // dont do it :)
-      console.log("[" + 32 + "m" + "indexMember : " + "[0m", action);
+      //console.log("[" + 32 + "m" + "indexMember : " + "[0m", action);
       members[0].features.push(action.payload.feature);
     },
   },
